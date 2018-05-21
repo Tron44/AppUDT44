@@ -34,7 +34,7 @@ $(document).ready(function(){
 	var paramstr = window.location.search.substr(7);		
 	$.ajax({
     type: "GET",      
-    url: 'http://localhost:8080/ApiRest-0.0.1-SNAPSHOT/asignaturas' + "/" + paramstr,     
+    url: 'http://90.173.3.108/ApiUDT44-1.0.0/asignaturas' + "/" + paramstr,     
     dataType: "json",    
     success: function(data){    	
       $.each(data,function(key, registro) {

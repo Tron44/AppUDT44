@@ -76,7 +76,7 @@ $(document).ready(function(){
         
     $.ajax({
     type: "GET",      
-    url: 'http://192.168.1.36:8080/ApiUDT44-1.0.0/preguntas' + "/" + parametroCuest,     
+    url: 'http://90.173.3.108/ApiUDT44-1.0.0/preguntas' + "/" + parametroCuest,     
    
     dataType: "json",   
     success: function(data){        
@@ -87,7 +87,7 @@ $(document).ready(function(){
         
         	$.each(arrayrec,function(key, registroResp) {   
         		var valido =  registroResp.valido;        		
-        		if (tipopregunta=="Excluyente"){
+        		if (tipopregunta=="0"){
         			$("#pregunta").append('<li><input type=radio name=ok' + registroResp.idPreguntaResp + '_' + registroResp.idRespuesta + '> ' + registroResp.textoRespuesta + '</li>');
         		}else{
         			$("#pregunta").append('<li><input type=checkbox name=ok' + registroResp.idPreguntaResp + '_' + registroResp.idRespuesta + '> ' + registroResp.textoRespuesta + '</li>');
